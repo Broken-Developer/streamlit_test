@@ -67,7 +67,8 @@ g_data = ss2[g_idx]
 st.write(g_data)
 
 # n_data를 섞어준다(비복원으로)
-np.random.choice(n_data, len(n_data), replace=False)
+n_rd = np.random.choice(n_data, len(n_data), replace=False)
+st.write(n_rd)
 
 # 2. df형태로 분리
 
