@@ -45,10 +45,19 @@ for idx, col in enumerate(columns2) : # 열의 위치
         # 키가 겹치면 안된다.
         # col 안에 메서드를 통해서 요소들을 생성해주겠다는 의미
         col.text_input(f"조 목록 {idx + 1 + idx2 * 4}", key=f"g{idx + 1 + idx2 * 4}")
+        # n -> g : 겹치지 말라고 변경
 
 # 13명이 소속될 조 이름을 넣을 위치를 만든다.
-st.write(st.session_state)
+# st.write(st.session_state)
 # np.random.choice -> 추출해서 이름들을 목록화한다.
+# 1. st.session_state -> n, g가 섞여있음
+ss = pd.Series(st.session_state) # 딕셔너리 -> 시리즈
+# st.write(ss)
+# ss2 = ss[ss != ""]
+ss2 = ss[ss.ne("")]
+st.write(ss2)
+
+# 2. df형태로 분리
 
 # <추첨 버튼>
 # 13개의 짝을 지어서 표시해줄 그래픽
