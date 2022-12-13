@@ -70,6 +70,10 @@ st.write(g_data)
 n_rd = np.random.choice(n_data, len(n_data), replace=False)
 st.write(n_rd)
 
+# g_data를 섞어준다(비복원으로)
+g_rd = np.random.choice(g_data, len(g_data), replace=False)
+st.write(g_rd)
+
 # 2. df형태로 분리
 
 # <추첨 버튼>
