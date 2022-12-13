@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.write(
@@ -24,4 +24,10 @@ st.write(
 
 # df
 titanic = sns.load_dataset('titanic')
-st.write(titanic) # 적당히 잘라줌
+st.write(titanic) # 적당히 잘라서 보여준다.
+# st.table(titanic) # 전체를 보여준다.
+
+# seaborn을 통한 시각화
+fig = plt.figure(figsize=(10, 4))
+sns.histplot(data=titanic, x='age')
+st.pyplot(fig)
