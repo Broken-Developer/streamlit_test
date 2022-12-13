@@ -13,7 +13,7 @@ st.header("여러분의 참여를 환영합니다!")
 # 추첨 대상인 13명의 이름을 넣을 수 있는 text_input을 만든다.
 # 4 X 4 행렬로 배치
 
-tabs = st.tabs(['참가자'])
+tabs = st.tabs(['참가자', '조'])
 
 # st.columns(n) : 열을 배치하는 메서드
 # columns = st.columns(4) # 화면을 열로 나눠서 배치
@@ -48,6 +48,7 @@ for idx, col in enumerate(columns2) : # 열의 위치
 
 # 13명이 소속될 조 이름을 넣을 위치를 만든다.
 st.write(st.session_state)
+# np.random.choice -> 추출해서 이름들을 목록화한다.
 
 # <추첨 버튼>
 # 13개의 짝을 지어서 표시해줄 그래픽
