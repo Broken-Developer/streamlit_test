@@ -23,7 +23,7 @@ for idx, col in enumerate(columns) : # 열의 위치
     for idx2 in range(4) :
         # 키가 겹치면 안된다.
         # col 안에 메서드를 통해서 요소들을 생성해주겠다는 의미
-        col.text_input(f"조 추첨 대상 {idx + 1 + idx2 * 4}", key=f"{idx + 1 + idx2 * 4}")
+        col.text_input(f"조 추첨 대상 {idx + 1 + idx2 * 4}", key=f"n{idx + 1 + idx2 * 4}")
 
 # 13명이 소속될 조 이름을 넣을 위치를 만든다.
 st.write(st.session_state)
