@@ -48,7 +48,7 @@ for idx, col in enumerate(columns2) : # 열의 위치
         # n -> g : 겹치지 말라고 변경
 
 # <추첨 버튼>
-if st.button('추첨 시작')
+if st.button('추첨 시작') :
     # 13명이 소속될 조 이름을 넣을 위치를 만든다.
     # st.write(st.session_state)
     # np.random.choice -> 추출해서 이름들을 목록화한다.
