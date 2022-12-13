@@ -57,7 +57,7 @@ if st.button('추첨 시작') :
     # st.write(ss)
     # ss2 = ss[ss != ""]
     ss2 = ss[ss.ne("")]
-    st.write(ss2)
+    # st.write(ss2)
 
     # string과 관련된 메서드를 사용할 수 있게 한다.
     n_idx = ss2.index.str.contains('n')
@@ -83,5 +83,6 @@ if st.button('추첨 시작') :
         "조 이름" : g_rd
     })
 
-    st.balloons()
+    # st.balloons()
+    st.snow()
     st.write(df)
