@@ -43,4 +43,4 @@ labels = ['A', 'B', 'C']
 fig = plt.figure(figsize=(8, 4))
 plt.pie(x=x, labels=labels, autopct='%.1f%%')
 
-st.pyplot()
+st.pyplot(fig)
