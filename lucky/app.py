@@ -9,6 +9,9 @@ import pandas as pd
 st.title("조 추첨 페이지")
 st.header("여러분의 참여를 환영합니다!")
 
+# ./ : repository상 가장 윗 폴더
+# ./ -> ./lucky
+st.image("./lucky/cute_dog.jpg")
 
 # 추첨 대상인 13명의 이름을 넣을 수 있는 text_input을 만든다.
 # 4 X 4 행렬로 배치
