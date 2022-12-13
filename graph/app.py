@@ -28,6 +28,19 @@ st.write(titanic) # 적당히 잘라서 보여준다.
 # st.table(titanic) # 전체를 보여준다.
 
 # seaborn을 통한 시각화
-fig = plt.figure(figsize=(10, 4))
+fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=titanic, x='age')
 st.pyplot(fig)
+
+fig = plt.figure(figsize=(8, 4))
+sns.histplot(data=titanic, x='age', hue='alive')
+st.pyplot(fig)
+
+# pie
+x = [10, 60, 30]
+labels = ['A', 'B', 'C']
+
+fig = plt.figure(figsize=(8, 4))
+plt.pie(x=x, labels=labels, autopct='%.1f%%')
+
+st.pyplot()
