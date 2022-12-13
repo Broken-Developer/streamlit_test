@@ -12,7 +12,7 @@ st.header("여러분의 참여를 환영합니다!")
 # 추첨 대상인 13명의 이름을 넣을 수 있는 text_input을 만든다.
 # 4 X 4 행렬로 배치
 
-tabs = st.tabs(2)
+tabs = st.tabs(['참가자'])
 
 # st.columns(n) : 열을 배치하는 메서드
 columns = st.columns(4) # 화면을 열로 나눠서 배치
