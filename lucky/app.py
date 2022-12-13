@@ -60,21 +60,27 @@ st.write(ss2)
 # string과 관련된 메서드를 사용할 수 있게 한다.
 n_idx = ss2.index.str.contains('n')
 n_data = ss2[n_idx]
-st.write(n_data)
+# st.write(n_data)
 
 g_idx = ss2.index.str.contains('g')
 g_data = ss2[g_idx]
-st.write(g_data)
+# st.write(g_data)
 
 # n_data를 섞어준다(비복원으로)
 n_rd = np.random.choice(n_data, len(n_data), replace=False)
-st.write(n_rd)
+# st.write(n_rd)
 
 # g_data를 섞어준다(비복원으로)
 g_rd = np.random.choice(g_data, len(g_data), replace=False)
-st.write(g_rd)
+# st.write(g_rd)
 
 # 2. df형태로 분리
+df = pd.DataFrame({
+    "추첨 대상자 이름" : n_rd,
+    "조 이름" : g_rd
+})
+
+st.write(df)
 
 # <추첨 버튼>
 # 13개의 짝을 지어서 표시해줄 그래픽
