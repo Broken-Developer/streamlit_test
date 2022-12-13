@@ -11,5 +11,5 @@ st.write(
 # df
 # UTF-8 / CP-949
 # https://seong6496.tistory.com/269
-df = pd.read_csv('./opendata/data.csv', encoding='cp949')
+df = pd.read_csv('./opendata/sub.csv', encoding='cp949')
 st.write(df)
