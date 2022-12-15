@@ -57,4 +57,7 @@ st.checkbox(
     value=False,
     key='smoker'
 )
-st.write(st.sessions_state['smoker'])
+st.write(st.session_state['smoker'])
+
+# region : 지역
+st.selectbox
