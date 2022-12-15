@@ -49,4 +49,12 @@ st.number_input(
     value=1,
     key='children'
 )
-st.write(st.session_state['children'])
+# st.write(st.session_state['children'])
+
+# smoker : 흡연여부
+st.checkbox(
+    label='흡연여부',
+    value=False,
+    key='smoker'
+)
+st.write(st.sessions_state['smoker'])
